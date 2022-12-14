@@ -1,0 +1,43 @@
+.sorting {
+  display: flex;
+  align-items: center;
+  margin-top: 54px;
+  margin-bottom: 42px;
+}
+
+.sorting__title {
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-right: 24px;
+}
+
+.sorting__select {
+  background: radial-gradient(
+    118.88% 606.86% at 0% 0%,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(157, 244, 255, 0.123) 100%
+  );
+
+  backdrop-filter: blur(15.5px);
+
+  border-radius: 30px;
+  border: 1px solid #278d9f;
+
+  padding: 9px 16px;
+
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+
+  background-image: url(../assets/svg/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  appearance: none;
+}
+
+.sorting__options {
+  background-color: #183e42;
+}

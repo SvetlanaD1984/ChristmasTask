@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="main-inner">
+          <aside>
+            <div class="filters-header">
+              <button class="button-sound"></button>
+              <button class="button-snowflake"></button>
+              <input class="search" type="text" placeholder="Поиск" />
+            </div>
+            <div class="sorting">
+              <p class="sorting__title">СОРТИРОВАТЬ</p>
+              <select class="sorting__select" name="" id="sort">
+                <option class="sorting__options" value="UpByName">
+                  По названию от "A" до "Я"
+                </option>
+                <option class="sorting__options" value="DownByName">
+                  По названию от "Я" до "А"
+                </option>
+                <option class="sorting__options" value="UpByCount">
+                  По количеству по возрастанию
+                </option>
+                <option class="sorting__options" value="DownByCount">
+                  По количеству по убыванию
+                </option>
+              </select>
+            </div>
+            <div class="categories">
+              <p class="categories__title">КАТЕГОРИИ</p>
+              <label class="categories__input">
+                <input class="categories__checkbox" type="checkbox" />
+                Все
+              </label>
+            </div>
+
+            <p class="shape__text">Форма</p>
+            <div class="shape">
+              <div class="shape__info">
+                <button
+                  class="shape__button shape__button-bell"
+                  data-filter="колокольчик"
+                ></button>
+                <p class="shape__img-info">Колокол</p>
+              </div>
+              <div class="shape__info">
+                <button
+                  class="shape__button shape__button-ball"
+                  data-filter="шар"
+                ></button>
+                <p class="shape__img-info">Шар</p>
+              </div>
+              <div class="shape__info">
+                <button
+                  class="shape__button shape__button-pine"
+                  data-filter="шишка"
+                ></button>
+                <p class="shape__img-info">Шишка</p>
+              </div>
+              <div class="shape__info">
+                <button
+                  class="shape__button shape__button-snowflake2"
+                  data-filter="снежинка"
+                ></button>
+                <p class="shape__img-info">Снежинка</p>
+              </div>
+              <div class="shape__info">
+                <button
+                  class="shape__button shape__button-birdtoy"
+                  data-filter="фигурка"
+                ></button>
+                <p class="shape__img-info">Фигурка</p>
+              </div>
+            </div>
+
+            <div class="amount">
+              <label class="amount__text" for="range"
+                >Количество экземпляров</label
+              >
+              <div>
+                <div class="amount__input">                  
+                </div>
+                <div class="amount__input-value"></div>
+              </div>
+                <div class="range__description-wrapper">
+                  <p>0</p>
+                  <p>12</p>
+                </div>
+              </div>
+            
+            <div class="year">
+              <label class="year__text" for="range">Год приобретения</label>
+              <div>
+                <div class="year__input"></div>
+                <div class="year__input-value"></div>
+                <div class="range__description-wrapper">
+                  <p>1940</p>
+                  <p>2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="color">
+              <p class="color__text">Цвет</p>
+              <div class="color__filters">
+                <button
+                  class="color__white button__color"
+                  data-filter="белый"
+                ></button>
+                <button
+                  class="color__yellow button__color"
+                  data-filter="желтый"
+                ></button>
+                <button
+                  class="color__red button__color"
+                  data-filter="красный"
+                ></button>
+                <button
+                  class="color__blue button__color"
+                  data-filter="синий"
+                ></button>
+                <button
+                  class="color__green button__color"
+                  data-filter="зелёный"
+                ></button>
+              </div>
+            </div>
+
+            <div class="size">
+              <p class="size__text">Размер</p>
+              <div class="size__filters">
+                <label class="size__filters-text" for="big">
+                  <input
+                    class="size-checkbox"
+                    data-filter="большой"
+                    id="big"
+                    type="checkbox"
+                  />
+                  Большой
+                </label>
+                <label class="size__filters-text" for="average">
+                  <input
+                    class="size-checkbox"
+                    data-filter="средний"
+                    id="average"
+                    type="checkbox"
+                  />
+                  Средний
+                </label>
+                <label class="size__filters-text" for="small">
+                  <input
+                    class="size-checkbox"
+                    data-filter="малый"
+                    id="small"
+                    type="checkbox"
+                  />
+                  Маленький
+                </label>
+              </div>
+            </div>
+            <div class="favourite">
+              <label class="favourite-text" for="favourite">
+                <input
+                  class="favourite-checkbox"
+                  id="favourite"
+                  type="checkbox"
+                />
+                Только любимые
+              </label>
+            </div>
+
+            <div class="reset__buttons">
+              <button class="reset__filters">Сбросить фильтры</button>
+              <button class="reset__settings">Сбросить настройки</button>
+            </div>
+          </aside>
+                
+          <section class="catalog">
+            <h1 class="catalog__title">ИГРУШКИ</h1>
+            <div class="catalog__toys"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__left">
+            <a class="footer__left-text" href="https://github.com/SvetlanaD1984"
+              >github</a
+            >
+            <p class="footer__left-text">© 2022</p>
+          </div>
+          <div class="footer__right">
+            <p class="footer__right-text">logo</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

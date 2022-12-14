@@ -1,0 +1,10 @@
+import "./styles/global.css";
+import "./styles/catalog.css";
+import "./styles/filtering.css";
+import "./styles/sorting.css";
+import * as view from "./scripts/view";
+import * as sort from "./scripts/sorting";
+import * as filter from "./scripts/filtering";
+import * as music from "./scripts/music";
+import * as store from "./scripts/store";
+import "nouislider/dist/nouislider.css";
