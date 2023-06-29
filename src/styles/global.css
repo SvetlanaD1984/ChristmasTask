@@ -39,7 +39,7 @@ button {
 }
 
 aside {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .footer {
@@ -66,6 +66,11 @@ aside {
 
 .footer__right-text {
   margin-right: 20px;
+  width: 130px;
+  height: 60px;
+  background-image: url(../assets/rs_school_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .footer__left-text {

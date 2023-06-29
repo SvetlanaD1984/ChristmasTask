@@ -144,23 +144,98 @@
 .amount__input,
 .year__input {
   width: 100%;
-  height: 2px;
+  height: 6px;
   background: #ffffff;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.amount__text,
+.year__text {
+  margin-bottom: 16px;
+}
+
+.amount__input-value1,
+.amount__input-value2 {
+  color: white;
 }
 
 .range__description-wrapper {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
-
   display: flex;
   justify-content: space-between;
-
   margin-top: 10px;
 }
 
+.amount__inputs,
+.year__inputs {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 5px;
+}
+
 .year {
-  margin-top: 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.year__input-value1,
+.year__input-value2 {
+  color: white;
+}
+
+.noUi-origin {
+  height: 6px !important;
+}
+
+.noUi-base {
+  height: 6px !important;
+}
+
+.noUi-handle {
+  background-image: url(../assets/thumb.png) !important;
+  border: none !important;
+  border-radius: none !important;
+  background: url(../assets/thumb.png) !important;
+  background-repeat: no-repeat !important;
+  cursor: default;
+  box-shadow: none !important;
+  right: -25px !important;
+}
+
+.noUi-handle:after {
+  background: none !important;
+}
+
+.noUi-handle:before {
+  background: none !important;
+}
+
+.noUi-connects {
+  background: #bdcdcd !important;
+  height: 6px !important;
+}
+
+.noUi-tooltip {
+  position: static !important;
+  margin-left: 12px !important;
+  padding-right: 30px !important;
+}
+
+.noUi-connect {
+  background: white !important;
+  height: 6px !important;
+}
+
+.noUi-horizontal {
+  background: white !important;
+  height: 6px !important;
+}
+.noUi-target.noUi-horizontal .noUi-tooltip {
+  background-color: #bdcdcd !important;
 }
 
 .color {

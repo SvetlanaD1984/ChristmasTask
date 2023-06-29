@@ -60,37 +60,39 @@ function filterByShape() {
 }
 
 //фИЛЬТРАЦИЯ ПО КОЛИЧЕСТВУ ЭКЗЕМПЛЯРОВ
+
 const amountSlider = document.querySelector(".amount__input");
 
 noUiSlider.create(amountSlider, {
-  start: [1, 11],
+  start: [0, 12],
+  tooltips: true,
   connect: true,
   range: {
     min: 0,
     max: 12,
   },
   step: 1,
-});
-
-let amountSliderValue = document.querySelector(".amount__input-value");
-amountSlider.noUiSlider.on("update", function (values, handle) {
-  amountSliderValue.innerHTML = values[handle];
+  format: {
+    to: (number) => parseFloat(number).toFixed(0),
+    from: (number) => parseFloat(number).toFixed(0),
+  },
 });
 
 //фИЛЬТРАЦИЯ ПО ГОДУ ПРИОБРЕТЕНИЯ
 const yearSlider = document.querySelector(".year__input");
 noUiSlider.create(yearSlider, {
-  start: [1941, 2020],
+  start: [1940, 2021],
+  tooltips: true,
   connect: true,
   range: {
     min: 1940,
     max: 2021,
   },
   step: 10,
-});
-let yearSliderValue = document.querySelector(".year__input-value");
-yearSlider.noUiSlider.on("update", function (values, handle) {
-  yearSliderValue.innerHTML = values[handle];
+  format: {
+    to: (number) => parseFloat(number).toFixed(0),
+    from: (number) => parseFloat(number).toFixed(0),
+  },
 });
 
 // ФИЛЬТРАЦИЯ ПО ЦВЕТУ
